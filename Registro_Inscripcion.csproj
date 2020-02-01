@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UI\Registros\ImagenBuscar.png" />
+    <None Remove="UI\Registros\ImagenElminar.png" />
+    <None Remove="UI\Registros\ImagenGuardar.png" />
+    <None Remove="UI\Registros\ImagenNuevo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DAL\Scripts\" />
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\Registros\ImagenBuscar.png" />
+    <Resource Include="UI\Registros\ImagenElminar.png" />
+    <Resource Include="UI\Registros\ImagenGuardar.png" />
+    <Resource Include="UI\Registros\ImagenNuevo.png" />
+  </ItemGroup>
+
+</Project>
